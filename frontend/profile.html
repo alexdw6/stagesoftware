@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css?h=656aaffb18e6a1aff5fbfe3cf106e125">
-    <link rel="stylesheet" href="assets/css/styles.min.css?h=ff53b842ce0f65a9e3011175cce61a53">
+    <link rel="stylesheet" href="assets/css/styles.min.css?h=3ee66867ec83ac3536bbd50c6fc1f3b1">
 </head>
 
 <body id="page-top">
@@ -128,21 +128,13 @@
                         <div class="col">
                             <div class="card mb-3 profile">
                                 <div class="card-body text-center shadow">
-                                    <div id="left">
-                                        <div>
-                                            <div><strong>Geef uw nieuw wachtwoord in</strong></div><input type="password"></div>
-                                        <div>
-                                            <div><strong>Geef uw nieuw wachtwoord in</strong></div><input type="password"></div>
-                                        <div>
-                                            <div><strong>Geef het huidige wachtwoord in</strong></div><input type="password"></div>
-                                        <div class="mb-3"><button class="btn btn-primary btn-sm" type="button">Wachtwoord veranderen</button></div>
-                                    </div>
                                     <div id="right">
                                         <div class="table-responsive">
                                             <table class="table" id="requirements-passwd">
                                                 <thead>
                                                     <tr>
                                                         <th>[ wachtwoord requirements ]</th>
+                                                        <th class="d-flex d-sm-flex d-xl-flex justify-content-end"><button class="btn btn-primary btn-sm" id="modal-icon" type="button">Wachtwoord veranderen</button></th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -151,6 +143,23 @@
                                                     </tr>
                                                 </tbody>
                                             </table>
+                                        </div>
+                                        <div class="modal fade" role="dialog" tabindex="-1" id="preview">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h4 class="modal-title">Wachtwoord wijzigen</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                                                    <div class="modal-body">
+                                                        <div>
+                                                            <div><strong>Geef uw nieuw wachtwoord in</strong></div><input type="password"></div>
+                                                        <div>
+                                                            <div><strong>Geef uw nieuw wachtwoord in</strong></div><input type="password"></div>
+                                                        <div>
+                                                            <div><strong>Geef het huidige wachtwoord in</strong></div><input type="password"></div>
+                                                    </div>
+                                                    <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal">Close</button><button class="btn btn-primary" type="button">Save</button></div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
